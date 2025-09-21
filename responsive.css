@@ -1,0 +1,195 @@
+@media (max-width: 1200px) {
+  .clients-logos {
+    max-width: 90%;
+  }
+  .feature-card {
+    max-width: 18rem;
+  }
+  .feature-card .feature-title {
+    font-size: 1.8rem;
+  }
+  .filled-container p:first-child {
+    max-width: 100%;
+  }
+  .customer-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .image-container {
+    flex-wrap: wrap;
+  }
+  .caring-card {
+    max-width: 25%;
+  }
+  footer {
+    padding: 60px 20px;
+  }
+
+  .footer-container-4 input {
+    padding-left: 1rem;
+  }
+  .caring-container p {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+  }
+
+  .caring-card a {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  .demo-container .section-title {
+    max-width: 100%;
+  }
+  .caring-wrapper {
+    max-width: 23rem;
+    width: 100%;
+  }
+  .caring-container p:nth-child(2) {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .caring-container p {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .caring-card a {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .footer-container-1 h2 {
+    font-size: 2rem;
+  }
+  footer {
+    padding: 10px 10px;
+    gap: 25px;
+    max-width: 80rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-container-2 h3 {
+    font-size: 1.6rem;
+  }
+  .footer-container-3 h3 {
+    font-size: 1.6rem;
+  }
+  ul {
+    font-size: 1.2rem;
+  }
+  nav {
+    display: none;
+  }
+  .header-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .hero-container {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10rem;
+  }
+
+  .customer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-container .sign-up-button {
+    margin: 0 auto;
+  }
+  .clients-logos {
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 80%;
+  }
+
+  .feature-card .feature-title {
+    font-size: 1.6rem;
+  }
+  .features {
+    gap: 6rem;
+    flex-wrap: wrap;
+  }
+  .example-container {
+    flex-wrap: wrap;
+  }
+  .feature-card p {
+    font-size: 1rem;
+  }
+
+  .filled-container p:first-child {
+    max-width: 100%;
+  }
+
+  .cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0.5rem;
+  }
+  .caring-card {
+    position: static;
+    max-width: 80%;
+    margin: 1rem auto;
+    transform: translateY(-29%);
+  }
+  .image-container a {
+    font-size: 0.8rem;
+  }
+
+  .number-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .number-hero-side {
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .number-text span {
+    font-size: 1.6rem;
+  }
+  .number-title {
+    font-size: 2rem;
+  }
+  .number-hero-side p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .header-text {
+    font-size: 2rem;
+  }
+
+  .hero-container h1 {
+    font-size: 3.8rem;
+    padding-top: 2rem;
+  }
+  .hero-container .hero-image {
+    max-width: 25rem;
+  }
+  .dot {
+    width: 1rem;
+    height: 1rem;
+  }
+  .example-container {
+    flex-wrap: wrap;
+  }
+  .demo-container .section-title {
+    font-size: 4rem;
+    letter-spacing: -2px;
+  }
+  .caring-container .section-title {
+    text-align: center;
+  }
+}
