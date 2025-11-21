@@ -136,7 +136,7 @@
     position: static;
     max-width: 80%;
     margin: 1rem auto;
-    transform: translateY(-29%);
+    
   }
   .image-container a {
     font-size: 0.8rem;
@@ -175,6 +175,7 @@
     font-size: 3.8rem;
     padding-top: 2rem;
   }
+
   .hero-container .hero-image {
     max-width: 25rem;
   }
