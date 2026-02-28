@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -61,9 +61,9 @@
         </div>
       </div>
       <div class="dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
       </div>
     </section>
     <!-- CLIENT-SECTION  -->
@@ -79,7 +79,6 @@
           <img src="imgs/Logo (2).svg" alt="" class="logo-image" />
           <img src="imgs/Logo (3).svg" alt="" class="logo-image" />
           <img src="imgs/Logo (4).svg" alt="" class="logo-image" />
-          <img src="" alt="" class="logo-image" />
         </div>
       </div>
     </section>
@@ -146,7 +145,7 @@
       </div>
     </section>
     <!-- NUMBER-SECTION -->
-    <section class="number-section">
+    <section class="number-section" id="stats-section">
       <div class="number-container container">
         <div class="number-hero-side">
           <h2 class="number-title">
@@ -158,28 +157,36 @@
           <div class="number">
             <img src="imgs/Icon (1).png" alt="" />
             <div class="number-text">
-              <span>2,245,341</span>
+              <span class="counter" data-target="2245341" data-duration="2000"
+                >2,245,341</span
+              >
               <p>Members</p>
             </div>
           </div>
           <div class="number">
             <img src="imgs/Icon (2).png" alt="" />
             <div class="number-text">
-              <span>828,867</span>
+              <span class="counter" data-target="828867" data-duration="1500"
+                >828,867</span
+              >
               <p>Event Bookings</p>
             </div>
           </div>
           <div class="number">
             <img src="imgs/Icon (3).png" alt="" />
             <div class="number-text">
-              <span>46,328</span>
+              <span class="counter" data-target="46328" data-duration="1000"
+                >46,328</span
+              >
               <p>Clubs</p>
             </div>
           </div>
           <div class="number">
             <img src="imgs/Icon.png" alt="" />
             <div class="number-text">
-              <span>1,926,436</span>
+              <span class="counter" data-target="1926436" data-duration="2500"
+                >1,926,436</span
+              >
               <p>Payments</p>
             </div>
           </div>
@@ -257,7 +264,15 @@
             </div>
             <div class="caring-card">
               <p>Creating Streamlined Safeguarding Processes with OneRen</p>
-              <a href="">Readmore &rarr;</a>
+              <a
+                href="#"
+                class="readmore"
+                data-title="Card 1 Title"
+                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero,
+adipisci quod quia excepturi iure corporis cupiditate quis id, maiores dolorum
+odit ad veritatis ut magni aut accusantium distinctio necessitatibus!Lorem."
+                >Readmore &rarr;</a
+              >
             </div>
           </div>
           <div class="caring-wrapper">
@@ -266,7 +281,15 @@
             </div>
             <div class="caring-card">
               <p>Creating Streamlined Safeguarding Processes with OneRen</p>
-              <a href="">Readmore &rarr;</a>
+              <a
+                href="#"
+                class="readmore"
+                data-title="Card 2 Title"
+                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero,
+adipisci quod quia excepturi iure corporis cupiditate quis id, maiores dolorum
+odit ad veritatis ut magni aut accusantium distinctio necessitatibus!Lorem."
+                >Readmore &rarr;</a
+              >
             </div>
           </div>
           <div class="caring-wrapper">
@@ -275,7 +298,15 @@
             </div>
             <div class="caring-card">
               <p>Creating Streamlined Safeguarding Processes with OneRen</p>
-              <a href="">Readmore &rarr;</a>
+              <a
+                href="#"
+                class="readmore"
+                data-title="Card 3 Title"
+                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero,
+adipisci quod quia excepturi iure corporis cupiditate quis id, maiores dolorum
+odit ad veritatis ut magni aut accusantium distinctio necessitatibus!Lorem."
+                >Readmore &rarr;</a
+              >
             </div>
           </div>
         </div>
@@ -340,5 +371,100 @@
         />
       </div>
     </footer>
+    <!-- Trigger Buttons -->
+
+    <!-- Modal LOGIN IN  Structure -->
+    <div class="custom-modal custom-login-modal">
+      <div class="custom-modal-content">
+        <span class="custom-close">&times;</span>
+        <h2 class="custom-modal-title">Login</h2>
+        <form class="custom-form">
+          <div class="custom-input-group">
+            <label for="login-username">Username</label>
+            <input
+              type="text"
+              id="login-username"
+              placeholder="Enter username"
+              required
+            />
+          </div>
+          <div class="custom-input-group custom-password-group">
+            <label for="login-password">Password</label>
+            <input
+              type="password"
+              id="login-password"
+              placeholder="Enter password"
+              required
+            />
+            <span class="custom-show-password">&#128065;</span>
+          </div>
+          <div class="custom-forgot">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="custom-submit-button">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="custom-modal custom-signup-modal">
+      <div class="custom-modal-content">
+        <span class="custom-close">&times;</span>
+        <h2 class="custom-modal-title">Sign Up</h2>
+        <form class="custom-form">
+          <div class="custom-input-group">
+            <label for="signup-username">Username</label>
+            <input
+              type="text"
+              id="signup-username"
+              placeholder="Enter username"
+              required
+            />
+          </div>
+          <div class="custom-input-group">
+            <label for="signup-email">Email</label>
+            <input
+              type="email"
+              id="signup-email"
+              placeholder="Enter email"
+              required
+            />
+          </div>
+          <div class="custom-input-group custom-password-group">
+            <label for="signup-password">Password</label>
+            <input
+              type="password"
+              id="signup-password"
+              placeholder="Enter password"
+              required
+            />
+            <span class="custom-show-password">&#128065;</span>
+          </div>
+          <div class="custom-input-group custom-password-group">
+            <label for="signup-confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="signup-confirm-password"
+              placeholder="Confirm password"
+              required
+            />
+            <span class="custom-show-password">&#128065;</span>
+          </div>
+          <button type="submit" class="custom-submit-button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Email -->
+
+    <!-- READ MORE MODAL POP UP -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    <script src="java.js"></script>
   </body>
 </html>

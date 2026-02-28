@@ -19,6 +19,7 @@
   }
   .image-container {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .caring-card {
     max-width: 25%;
@@ -112,6 +113,7 @@
   .feature-card .feature-title {
     font-size: 1.6rem;
   }
+
   .features {
     gap: 6rem;
     flex-wrap: wrap;
@@ -136,7 +138,6 @@
     position: static;
     max-width: 80%;
     margin: 1rem auto;
-    
   }
   .image-container a {
     font-size: 0.8rem;
