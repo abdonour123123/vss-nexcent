@@ -45,8 +45,8 @@
     max-width: 100%;
   }
   .caring-wrapper {
-    max-width: 23rem;
-    width: 100%;
+    flex: 1 1 100%; /* single column */
+    max-width: 100%;
   }
   .caring-container p:nth-child(2) {
     max-width: 80%;
@@ -90,9 +90,22 @@
     padding-right: 2.5rem;
   }
   .hero-container {
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack image & text vertically */
+    gap: 3rem;
+    padding: 3rem 2rem;
+    min-height: auto; /* let height adjust naturally */
     text-align: center;
-    gap: 10rem;
+  }
+  .hero-header-side {
+    align-items: center; /* Center text */
+    text-align: center; /* Center headings & paragraphs */
+    max-width: 100%; /* Reduce width */
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  .hero-header-side p {
+    font-size: 1.6rem;
   }
 
   .customer-container {
@@ -137,10 +150,13 @@
   .caring-card {
     position: static;
     max-width: 80%;
-    margin: 1rem auto;
   }
   .image-container a {
     font-size: 0.8rem;
+  }
+
+  .custom-modal-content {
+    width: 30rem;
   }
 
   .number-container {
@@ -172,11 +188,32 @@
     font-size: 2rem;
   }
 
-  .hero-container h1 {
-    font-size: 3.8rem;
-    padding-top: 2rem;
+  .feature-card {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 60%; /* Reduce width */
+    margin: 0 auto;
   }
 
+  .example-hero-side {
+    padding-left: 2.5rem;
+  }
+  .caring-image {
+    max-width: 80%;
+  }
+  .client-container p {
+    font-size: 1.2rem;
+  }
+
+  .hero-container h1 {
+    font-size: 2.6rem;
+    padding-top: 2rem;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
   .hero-container .hero-image {
     max-width: 25rem;
   }
