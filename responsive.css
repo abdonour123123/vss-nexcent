@@ -142,12 +142,16 @@
   }
 
   .feature-card .feature-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .example-hero-side h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding-top: 3rem;
+  }
+
+  .example-hero-side p {
+    font-size: 1rem;
   }
 
   .features {

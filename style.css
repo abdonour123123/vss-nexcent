@@ -253,14 +253,7 @@ nav {
 }
 
 /* Make images responsive and remove unnecessary spacing */
-.clients-logos img {
-  margin: 0;
-  padding: 0;
-  display: block;
-  max-width: 100%; /* Prevent images from overflowing */
-  height: auto; /* Maintain aspect ratio */
-  flex: 1 0 30%; /* Allow images to take up 30% width */
-}
+
 /* FEATURE-CONTAINER */
 
 .feature-container {
