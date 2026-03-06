@@ -2,6 +2,9 @@
   .clients-logos {
     max-width: 90%;
   }
+  .hero-header-side h1 {
+    font-size: 2.2rem; /* Adjust font size */
+  }
   .feature-card {
     max-width: 18rem;
   }
@@ -50,6 +53,7 @@
   }
   .caring-container p:nth-child(2) {
     max-width: 80%;
+    font-size: 1.2rem;
   }
 }
 
@@ -91,7 +95,7 @@
   }
   .hero-container {
     flex-direction: column; /* Stack image & text vertically */
-    gap: 3rem;
+    gap: 2rem;
     padding: 3rem 2rem;
     min-height: auto; /* let height adjust naturally */
     text-align: center;
@@ -104,8 +108,15 @@
     gap: 1rem;
   }
 
+  .hero-container h1 {
+    font-size: 2rem; /* Adjust for smaller screens */
+  }
   .hero-header-side p {
-    font-size: 1.6rem;
+    font-size: 1.4rem; /* Adjust paragraph size */
+  }
+
+  .hero-container .sign-up-button {
+    margin: 1rem auto;
   }
 
   .customer-container {
@@ -118,13 +129,25 @@
     margin: 0 auto;
   }
   .clients-logos {
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1.6rem; /* Space between logos */
+    justify-items: center; /* Center the items in each grid cell */
+    padding-top: 5rem;
+  }
+
+  .clients-logos img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .feature-card .feature-title {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .example-hero-side h2 {
+    font-size: 2rem;
+    padding-top: 3rem;
   }
 
   .features {
@@ -140,6 +163,7 @@
 
   .filled-container p:first-child {
     max-width: 100%;
+    text-align: LEFT;
   }
 
   .cards {
@@ -152,7 +176,7 @@
     max-width: 80%;
   }
   .image-container a {
-    font-size: 0.8rem;
+    font-size: 1.6rem;
   }
 
   .custom-modal-content {
@@ -163,6 +187,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  .section-title {
+    font-size: 2rem;
+  }
   .number-hero-side {
     max-width: 100%;
     text-align: center;
@@ -172,10 +200,13 @@
     font-size: 1.6rem;
   }
   .number-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .number-hero-side p {
     font-size: 1rem;
+  }
+  .caring-image {
+    max-width: 80%;
   }
 }
 
@@ -208,6 +239,7 @@
   .hero-container h1 {
     font-size: 2.6rem;
     padding-top: 2rem;
+    margin: 0;
   }
   .cards {
     flex-wrap: wrap;
@@ -225,10 +257,11 @@
     flex-wrap: wrap;
   }
   .demo-container .section-title {
-    font-size: 4rem;
+    font-size: 2.6rem;
     letter-spacing: -2px;
   }
   .caring-container .section-title {
     text-align: center;
+    font-size: 1.8rem;
   }
 }

@@ -106,13 +106,6 @@ nav {
   height: 100%;
   cursor: pointer;
   transition: all 0.4s ease;
-  filter: grayscale(100%);
-}
-
-.logo-image:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.2);
 }
 
 .header-text {
@@ -250,13 +243,24 @@ nav {
 
 .clients-logos {
   display: flex;
-  padding: 1.6rem 0 0 0; /* Added 2rem horizontal padding */
+  padding: 1.6rem 0 0 0;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Center logos horizontally */
+  flex-wrap: wrap; /* Allow logos to wrap */
+  gap: 2rem; /* Space between logos */
   max-width: 80rem;
-  width: 100%;
+  width: 100%; /* Full width */
 }
 
+/* Make images responsive and remove unnecessary spacing */
+.clients-logos img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-width: 100%; /* Prevent images from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  flex: 1 0 30%; /* Allow images to take up 30% width */
+}
 /* FEATURE-CONTAINER */
 
 .feature-container {
